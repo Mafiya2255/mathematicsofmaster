@@ -6,8 +6,6 @@ classesLink.addEventListener('click', function(e) {
     e.preventDefault();
     submenu.classList.toggle('show');
 });
-
-// Hide submenu when any other nav link is clicked (except Classes)
 navLinks.forEach(link => {
     if (link !== classesLink) {
         link.addEventListener('click', function() {
