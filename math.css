@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 55px;
+    top: 57px;
     width: 125px;
 }
 
@@ -39,6 +39,7 @@ body {
     align-items: center;
     position: relative;
     width: 125px;
+    margin-bottom: 2px;
 }
 
 #navigation ul li ul li a {
@@ -119,6 +120,7 @@ body {
         transform: translateX(0);
     }
 }
+
 #classes-submenu li {
     opacity: 0;
     transform: translateX(-30px);
@@ -143,7 +145,7 @@ body {
     width: 200px;
     height: 55px;
     font-size: 18px;
-    border: 1px solid rgb(0, 0, 0);
+    /* border: 1px solid rgb(0, 0, 0); */
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     list-style: none;
@@ -178,6 +180,16 @@ body {
 
 #navigation ul li a:hover {
     color: #fff;
+
+}
+
+#navigation ul li a .icon {
+    position: static;
+    display: block;
+    line-height: 10px;
+    font-size: 18px;
+    color: blue;
+    padding-right: 10px;
 
 }
 
@@ -364,12 +376,43 @@ body {
     height: 100vh;
     z-index: 10;
 }
+.para-1{
+    position:absolute;
+    width: 1230px;
+    height: 50px;
+    margin-top:90px; 
+    padding-left: 10px;   
+    z-index: -1;
+}
+.para-1 p{
+   color: aqua;
+}
+.para-1 h1{
+    padding-top: 17px;
+    padding-left:10px;
+    color:greenyellow;
+}
+#h1{
+    color:red;
+    font-size: 40px;
+}
+.lesson-list .icon-1 {
+    display: none;
+}
+
+.lesson-list-1 .icon-1 {
+    display: none;
+}
+
+.lesson-list-2 .icon-1 {
+    display: none;
+}
 
 .lesson-list {
     width: 200px;
     height: 300px;
-    margin-top: 200px;
-    margin-left: 50px;
+    margin-top: 230px;
+    margin-left: 20px;
 }
 
 .lesson-list ul {
@@ -378,7 +421,7 @@ body {
 }
 
 .lesson-list ul li {
-   background: linear-gradient(45deg, aqua,rgb(0, 255, 26) );
+    background: linear-gradient(45deg, aqua, rgb(0, 255, 26));
     /* backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px); */
     display: flex;
@@ -390,6 +433,7 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
 .lesson-list ul li a {
     display: block;
     text-decoration: none;
@@ -397,7 +441,7 @@ body {
     width: 100%;
     height: 100%;
     justify-items: center;
-    align-items:center;
+    align-items: center;
 }
 
 .lesson-list ul li a span {
@@ -407,7 +451,7 @@ body {
 .lesson-list-1 {
     width: 200px;
     height: 300px;
-    margin-top: 200px;
+    margin-top: 230px;
     margin-left: 60px;
 }
 
@@ -435,8 +479,8 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    justify-content: center ;
-    align-items:center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .lesson-list-1 ul li a span {
@@ -446,21 +490,22 @@ body {
 .lesson-list-2 {
     width: 200px;
     height: 300px;
-    margin-top: 200px;
-    margin-left:70px;
+    margin-top: 230px;
+    margin-left: 70px;
 }
 
 .lesson-list-2 ul {
     list-style-type: none;
 }
+
 .lesson-list-2 ul li a {
     text-decoration: none;
     font-size: 18px;
     display: block;
-    width:100%;
-    height:100%;
-    justify-content: center ;
-    align-items:center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .lesson-list-2 ul li a span {
@@ -489,21 +534,28 @@ body {
     }
 
     #navigation {
-          margin-right: 0; /* Right margin hatao */
-          left: 0; /* Agar position absolute/fixed ho to left 0 */
-          right: 0;
-          width: 100vw; /* Full width */
-          display: flex;
-          flex-direction: column; /* Column me lao */
-          align-items: center; /* Center align */
-          justify-content: flex-start;
-          position: static; 
-          z-index: 100; /*Rahul */
-          margin-top: 0;
-          padding: 0;
-        }
+        margin-right: 0;
+        /* Right margin hatao */
+        left: 0;
+        /* Agar position absolute/fixed ho to left 0 */
+        right: 0;
+        width: 100vw;
+        /* Full width */
+        display: flex;
+        flex-direction: column;
+        /* Column me lao */
+        align-items: center;
+        /* Center align */
+        justify-content: flex-start;
+        position: static;
+        z-index: 100;
+        /*Rahul */
+        margin-top: 0;
+        padding: 0;
+    }
+
     #navigation ul {
-    margin-top:40px;
+        margin-top: 40px;
     }
 
     #navigation ul li {
@@ -514,6 +566,7 @@ body {
         border-top-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
+
     #navigation ul li:hover {
         border-top-right-radius: 15px;
         border-bottom-left-radius: 15px;
@@ -527,7 +580,7 @@ body {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top:0px;
+        top: 0px;
         width: 77px;
         z-index: 99;
     }
@@ -535,8 +588,8 @@ body {
     #navigation ul li ul li {
         width: 70px;
         height: 35px;
-        margin-top:0px;
-        border:none;
+        margin-top: 0px;
+        border: none;
     }
 
     #classes-submenu li {
@@ -558,6 +611,14 @@ body {
         left: 0;
         width: 100vw;
 
+    }
+
+    #navigation ul li a .icon {
+        font-size: 15px;
+        justify-content: left;
+        align-items: center;
+        line-height: 1px;
+        padding-right: 3px;
     }
 
     .card-container {
@@ -583,5 +644,146 @@ body {
     .para {
         margin-top: 600px;
         width: 350px;
+    }
+   .para-1{
+    position:absolute;
+    width: 400px;
+    height: 50px;
+    margin-top:90px; 
+    padding-left: 10px;   
+    z-index: -1;
+}
+.para-1 p{
+    text-align: justify;
+   color: aqua;
+}
+.para-1 h1{
+    padding-top:10px;
+    padding-left: 0px;
+    font-size: 20px;
+}
+#h1{
+    font-size: 25px;
+}
+    .lesson-list .icon-1{
+        display: inline;
+        color:red;
+        font-size: 20px;
+    }
+    .lesson-list-1 .icon-1{
+        display: inline;
+        color:red;
+        font-size: 20px;
+    }
+    .lesson-list-2 .icon-1{
+        display: inline;
+        color:red;
+        font-size: 20px;
+    }
+    .lesson-list {
+        width: 300px;
+        height: 0px;
+        margin-top: 200px;
+        margin-left: 10px;
+    }
+
+    .lesson-list ul {
+        list-style-type: none;
+
+    }
+
+    .lesson-list ul li {
+        background: none;
+        width: 300px;
+        height: 30px;
+        padding-top: 0px;
+        padding-left: 0px;
+        border: none;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .lesson-list ul li a {
+        text-align: justify;
+        text-decoration: none;
+        font-size: 15px;
+        width: 400px;
+        height: 100%;
+        color:#ffff99;
+        margin-bottom:10px;
+    }
+
+    .lesson-list ul li a span {
+        font-size: 12px;
+    }
+
+    .lesson-list-1 {
+        width: 200px;
+        height: 0px;
+        margin-top: 175px;
+        margin-left: 10px;
+    }
+
+    .lesson-list-1 ul {
+        list-style-type: none;
+    }
+
+    .lesson-list-1 ul li {
+        background: none;
+        width: 300px;
+        height: 30px;
+        padding-top: 0px;
+        padding-left: 0px;
+        border: none;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .lesson-list-1 ul li a {
+        text-align: justify;
+        text-decoration: none;
+        font-size: 15px;
+        width: 400px;
+        height: 100%;
+        color:#ffff99
+    }
+
+    .lesson-list-1 ul li a span {
+        font-size: 11px;
+    }
+
+    .lesson-list-2 {
+        width: 200px;
+        height: 300px;
+        margin-top: 175px;
+        margin-left: 10px;
+    }
+
+    .lesson-list-2 ul {
+        list-style-type: none;
+    }
+
+    .lesson-list-2 ul li a {
+        text-align: justify;
+        text-decoration: none;
+        font-size: 15px;
+        width: 400px;
+        height: 100%;
+        color:#ffff99;
+    }
+
+    .lesson-list-2 ul li a span {
+        font-size: 11px;
+    }
+
+    .lesson-list-2 ul li {
+        background: none;
+        width: 300px;
+        height: 30px;
+        padding-top: 0px;
+        padding-left: 0px;
+        border: none;
+        margin-bottom: 5px;
+        margin-top: 0px;
     }
 }
