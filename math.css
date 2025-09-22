@@ -525,7 +525,11 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
 }
-
+#fo{
+    width:100px;
+    height: 100px;
+    background-color: red;
+}
 
 @media only screen and (max-width:413px) {
     body {
@@ -630,13 +634,23 @@ body {
         align-items: center;
         gap: 5px;
     }
+    .card{
+        margin-top: 20px;
+        width: 250px;
+        height:250px;
+    }
 
     .card-inner {
         transition: transform 0.6s;
         transform-style: preserve-3d;
         transform: rotateY(0deg);
     }
-
+    .card-front img{
+        width: 137px
+    }
+    .card-front-1 img{
+        width: 137px;
+    }
     .card-inner.flipped {
         transform: rotateY(180deg);
     }
