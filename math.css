@@ -294,10 +294,9 @@ body {
 
 }
 
-.card-back a p {
-    font-size: 50px;
-    color: red;
-
+.card-back a img {
+ width: 280px;
+ height: 280px;  
 }
 
 .card-back-1 a {
@@ -674,10 +673,10 @@ body {
 .para-1 h1{
     padding-top:10px;
     padding-left: 0px;
-    font-size: 20px;
+    font-size: 17px;
 }
 #h1{
-    font-size: 25px;
+    font-size: 20px;
 }
     .lesson-list .icon-1{
         display: inline;
@@ -720,7 +719,7 @@ body {
     .lesson-list ul li a {
         text-align: justify;
         text-decoration: none;
-        font-size: 15px;
+        font-size:13px;
         width: 400px;
         height: 100%;
         color:#ffff99;
@@ -728,7 +727,7 @@ body {
     }
 
     .lesson-list ul li a span {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .lesson-list-1 {
@@ -756,14 +755,14 @@ body {
     .lesson-list-1 ul li a {
         text-align: justify;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 13px;
         width: 400px;
         height: 100%;
         color:#ffff99
     }
 
     .lesson-list-1 ul li a span {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .lesson-list-2 {
@@ -780,14 +779,14 @@ body {
     .lesson-list-2 ul li a {
         text-align: justify;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 13px;
         width: 400px;
         height: 100%;
         color:#ffff99;
     }
 
     .lesson-list-2 ul li a span {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .lesson-list-2 ul li {
@@ -799,5 +798,14 @@ body {
         border: none;
         margin-bottom: 5px;
         margin-top: 0px;
+    }
+    .lesson-list ul li a .icon-1{
+        font-size: 18px;
+    }
+    .lesson-list-1 ul li a .icon-1{
+        font-size: 18px;
+    }
+    .lesson-list-2 ul li a .icon-1{
+        font-size: 18px;
     }
 }
