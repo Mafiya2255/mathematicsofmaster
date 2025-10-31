@@ -6,6 +6,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     margin: 0;
     background-color: rgb(0, 0, 0);
     background-size: cover;
@@ -14,10 +15,11 @@ body {
     background-attachment: fixed;
 }
 
+
 #navigation {
     padding-left: 10px;
     width: 650px;
-    position: fixed;
+    position: static;
     display: flex;
     margin-top: 20px;
     justify-items: left;
@@ -295,8 +297,8 @@ body {
 }
 
 .card-back a img {
- width: 280px;
- height: 280px;  
+    width: 280px;
+    height: 300px;
 }
 
 .card-back-1 a {
@@ -312,6 +314,7 @@ body {
     color: red;
 
 }
+
 
 .para {
     width: 550px;
@@ -375,26 +378,36 @@ body {
     height: 100vh;
     z-index: 10;
 }
-.para-1{
-    position:absolute;
+
+.para-1 {
+    position: absolute;
     width: 1230px;
     height: 50px;
-    margin-top:90px; 
-    padding-left: 10px;   
+    margin-top: 90px;
+    padding-left: 10px;
     z-index: -1;
 }
-.para-1 p{
-   color: aqua;
+
+.para-1 p {
+    color: aqua;
 }
-.para-1 h1{
+
+.para-1 h1 {
     padding-top: 17px;
-    padding-left:10px;
-    color:greenyellow;
+    padding-left: 10px;
+    color: greenyellow;
 }
-#h1{
-    color:red;
+
+#h1 {
+    color: red;
     font-size: 40px;
 }
+
+.lesson {
+    display: flex;
+    flex-direction: column;
+}
+
 .lesson-list .icon-1 {
     display: none;
 }
@@ -409,8 +422,8 @@ body {
 
 .lesson-list {
     width: 200px;
-    height: 300px;
-    margin-top: 230px;
+    height: 00px;
+    margin-top: 155px;
     margin-left: 20px;
 }
 
@@ -449,9 +462,9 @@ body {
 
 .lesson-list-1 {
     width: 200px;
-    height: 300px;
-    margin-top: 230px;
-    margin-left: 60px;
+    height: 0px;
+    margin-bottom: 0px;
+    margin-left: 260px;
 }
 
 .lesson-list-1 ul {
@@ -488,9 +501,7 @@ body {
 
 .lesson-list-2 {
     width: 200px;
-    height: 300px;
-    margin-top: 230px;
-    margin-left: 70px;
+    margin-left: 495px;
 }
 
 .lesson-list-2 ul {
@@ -524,10 +535,144 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
 }
-#fo{
-    width:100px;
-    height: 100px;
-    background-color: red;
+
+.foot {
+    margin-top: 65px;
+}
+
+.foot-1 {
+    margin-top: 275px;
+}
+
+footer {
+    background: #311111;
+    padding-top: 50px;
+    width: 1240px;
+}
+
+.footer {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 33.3%;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p {
+    width: 190px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer-content ul {
+    text-align: center;
+}
+
+.list {
+    padding: 0;
+}
+
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+
+}
+
+.list li a {
+    color: white;
+}
+
+.list li::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition-duration: 0.5s;
+}
+
+.list li:hover::before {
+    width: 70px;
+}
+
+.social-icons {
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-icons li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons li a {
+    color: white;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: red;
+}
+
+.social-icons li a i:hover {
+    color: red;
+}
+
+.bottom-bar {
+    background: red;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    color: #311111;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+
+}
+
+.disclaimer {
+    width: 1200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.disclaimer h1 {
+    color: #fbfb51;
+}
+
+.disclaimer p {
+    padding-top: 10px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Ebrima', 'sans-serif';
+    text-align: justify
 }
 
 @media only screen and (max-width:413px) {
@@ -633,10 +778,11 @@ body {
         align-items: center;
         gap: 5px;
     }
-    .card{
+
+    .card {
         margin-top: 20px;
         width: 250px;
-        height:250px;
+        height: 250px;
     }
 
     .card-inner {
@@ -644,55 +790,71 @@ body {
         transform-style: preserve-3d;
         transform: rotateY(0deg);
     }
-    .card-front img{
+
+    .card-front img {
         width: 137px
     }
-    .card-front-1 img{
+
+    .card-front-1 img {
         width: 137px;
     }
+
     .card-inner.flipped {
         transform: rotateY(180deg);
+    }
+
+    .card-back a img {
+        width: 200px;
+        height: 220px;
     }
 
     .para {
         margin-top: 600px;
         width: 350px;
     }
-   .para-1{
-    position:absolute;
-    width: 400px;
-    height: 50px;
-    margin-top:90px; 
-    padding-left: 10px;   
-    z-index: -1;
-}
-.para-1 p{
-    text-align: justify;
-   color: aqua;
-}
-.para-1 h1{
-    padding-top:10px;
-    padding-left: 0px;
-    font-size: 17px;
-}
-#h1{
-    font-size: 20px;
-}
-    .lesson-list .icon-1{
-        display: inline;
-        color:red;
+
+    .para-1 {
+        position: absolute;
+        width: 400px;
+        height: 50px;
+        margin-top: 90px;
+        padding-left: 10px;
+        z-index: -1;
+    }
+
+    .para-1 p {
+        text-align: justify;
+        color: aqua;
+    }
+
+    .para-1 h1 {
+        padding-top: 10px;
+        padding-left: 0px;
+        font-size: 17px;
+    }
+
+    #h1 {
         font-size: 20px;
     }
-    .lesson-list-1 .icon-1{
+
+    .lesson-list .icon-1 {
         display: inline;
-        color:red;
+        color: red;
         font-size: 20px;
     }
-    .lesson-list-2 .icon-1{
+
+    .lesson-list-1 .icon-1 {
         display: inline;
-        color:red;
+        color: red;
         font-size: 20px;
     }
+
+    .lesson-list-2 .icon-1 {
+        display: inline;
+        color: red;
+        font-size: 20px;
+    }
+
     .lesson-list {
         width: 300px;
         height: 0px;
@@ -719,11 +881,11 @@ body {
     .lesson-list ul li a {
         text-align: justify;
         text-decoration: none;
-        font-size:13px;
+        font-size: 13px;
         width: 400px;
         height: 100%;
-        color:#ffff99;
-        margin-bottom:10px;
+        color: #ffff99;
+        margin-bottom: 10px;
     }
 
     .lesson-list ul li a span {
@@ -758,7 +920,7 @@ body {
         font-size: 13px;
         width: 400px;
         height: 100%;
-        color:#ffff99
+        color: #ffff99
     }
 
     .lesson-list-1 ul li a span {
@@ -782,7 +944,7 @@ body {
         font-size: 13px;
         width: 400px;
         height: 100%;
-        color:#ffff99;
+        color: #ffff99;
     }
 
     .lesson-list-2 ul li a span {
@@ -799,13 +961,57 @@ body {
         margin-bottom: 5px;
         margin-top: 0px;
     }
-    .lesson-list ul li a .icon-1{
+
+    .lesson-list ul li a .icon-1 {
         font-size: 18px;
     }
-    .lesson-list-1 ul li a .icon-1{
+
+    .lesson-list-1 ul li a .icon-1 {
         font-size: 18px;
     }
-    .lesson-list-2 ul li a .icon-1{
+
+    .lesson-list-2 ul li a .icon-1 {
         font-size: 18px;
+    }
+
+    footer {
+        margin-top: 630px;
+        width: 413px;
+    }
+
+    .footer {
+        width: 413px;
+        height: 220px;
+    }
+
+    .footer-content h3 {
+        font-size: 20px;
+    }
+
+    .footer-content p {
+        font-size: 15px;
+        width: 140px;
+    }
+
+    .list li {
+        width: 150px;
+    }
+
+    .list li a {
+        font-size: 15px;
+    }
+
+   .foot footer{
+        margin-top: 0px;
+    }
+    .foot-1{
+        width: 413px;
+        height: 20px;
+    }
+    .foot-1 footer {
+        margin-top: 0px;
+    }
+    .disclaimer{
+        width:380px;
     }
 }
